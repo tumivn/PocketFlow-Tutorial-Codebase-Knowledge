@@ -1,4 +1,5 @@
-<h1 align="center">Turns Codebase into Easy Tutorial with AI</h1>
+
+<h1 >Turns Codebase into Easy Tutorial or Software Architecture Document with AI</h1>
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
  <a href="https://discord.gg/hUHHE9Sa6T">
@@ -12,15 +13,28 @@
   />
 </p>
 
-This is a tutorial project of [Pocket Flow](https://github.com/The-Pocket/PocketFlow), a 100-line LLM framework. It crawls GitHub repositories and builds a knowledge base from the code. It analyzes entire codebases to identify core abstractions and how they interact, and transforms complex code into beginner-friendly tutorials with clear visualizations.
+<div align="center">
+  <h3>🚀 MAJOR UPGRADE 🚀</h3>
+  <p><strong>This fork by Le Hoang Dung revolutionizes SAD generation with powerful C4 Model integration!</strong></p>
+  <p>Transform your documentation with professional-grade architectural visualizations at multiple levels of abstraction</p>
+  <p>📊 System Context → 🧩 Containers → 🔌 Components</p>
+  <hr style="width:50%">
+</div>
+
+This is a tutorial project of [Pocket Flow](https://github.com/The-Pocket/PocketFlow), a 100-line LLM framework. It crawls GitHub repositories and builds a knowledge base from the code. It analyzes entire codebases to identify core abstractions and how they interact, and transforms complex code into either beginner-friendly tutorials or professional Software Architecture Documents (SAD) with clear visualizations. 
+
+The SAD generation now includes Chapter 0 as an architecture overview using the C4 Model, providing a comprehensive view of the system at multiple levels of abstraction:
+- **System Context (Level 1)**: Shows the system as a whole and its interactions with users and external systems
+- **Containers (Level 2)**: Breaks down the system into containers (applications, data stores, microservices)
+- **Components (Level 3)**: Shows the major structural building blocks within containers and their interactions
+
+Each level is visualized with Mermaid diagrams, making it easy to understand the system architecture at a glance. The chapter also includes sections on architectural goals, constraints, use cases, process views, deployment views, and quality attributes.
 
 - Check out the [YouTube Development Tutorial](https://youtu.be/AFY67zOpbSo) for more!
 
 - Check out the [Substack Post Tutorial](https://zacharyhuang.substack.com/p/ai-codebase-knowledge-builder-full) for more!
 
-&nbsp;&nbsp;**🔸 🎉 Reached Hacker News Front Page** (April 2025) with >900 up‑votes:  [Discussion »](https://news.ycombinator.com/item?id=43739456)
-
-&nbsp;&nbsp;**🔸 🎊 Online Service Now Live!** (May&nbsp;2025) Try our new online version at [https://code2tutorial.com/](https://code2tutorial.com/) – just paste a GitHub link, no installation needed!
+&nbsp;&nbsp;**🔸 🎉 Reached Hacker News Front Page** (April 2025) with >800 up‑votes:  [Discussion »](https://news.ycombinator.com/item?id=43739456)
 
 ## ⭐ Example Results for Popular GitHub Repositories!
 
@@ -32,61 +46,56 @@ This is a tutorial project of [Pocket Flow](https://github.com/The-Pocket/Pocket
 
 🤯 All these tutorials are generated **entirely by AI** by crawling the GitHub repo!
 
-- [AutoGen Core](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/AutoGen%20Core) - Build AI teams that talk, think, and solve problems together like coworkers!
+- [AutoGen Core](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/AutoGen%20Core) - Build AI teams that talk, think, and solve problems together like coworkers!
 
-- [Browser Use](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Browser%20Use) - Let AI surf the web for you, clicking buttons and filling forms like a digital assistant!
+- [Browser Use](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Browser%20Use) - Let AI surf the web for you, clicking buttons and filling forms like a digital assistant!
 
-- [Celery](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Celery) - Supercharge your app with background tasks that run while you sleep!
+- [Celery](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Celery) - Supercharge your app with background tasks that run while you sleep!
 
-- [Click](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Click) - Turn Python functions into slick command-line tools with just a decorator!
+- [Click](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Click) - Turn Python functions into slick command-line tools with just a decorator!
 
-- [Codex](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Codex) - Turn plain English into working code with this AI terminal wizard!
+- [Codex](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Codex) - Turn plain English into working code with this AI terminal wizard!
 
-- [Crawl4AI](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Crawl4AI) - Train your AI to extract exactly what matters from any website!
+- [Crawl4AI](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Crawl4AI) - Train your AI to extract exactly what matters from any website!
 
-- [CrewAI](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/CrewAI) - Assemble a dream team of AI specialists to tackle impossible problems!
+- [CrewAI](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/CrewAI) - Assemble a dream team of AI specialists to tackle impossible problems!
 
-- [DSPy](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/DSPy) - Build LLM apps like Lego blocks that optimize themselves!
+- [DSPy](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/DSPy) - Build LLM apps like Lego blocks that optimize themselves!
 
-- [FastAPI](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/FastAPI) - Create APIs at lightning speed with automatic docs that clients will love!
+- [FastAPI](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/FastAPI) - Create APIs at lightning speed with automatic docs that clients will love!
 
-- [Flask](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Flask) - Craft web apps with minimal code that scales from prototype to production!
+- [Flask](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Flask) - Craft web apps with minimal code that scales from prototype to production!
 
-- [Google A2A](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Google%20A2A) - The universal language that lets AI agents collaborate across borders!
+- [Google A2A](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Google%20A2A) - The universal language that lets AI agents collaborate across borders!
 
-- [LangGraph](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/LangGraph) - Design AI agents as flowcharts where each step remembers what happened before!
+- [LangGraph](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/LangGraph) - Design AI agents as flowcharts where each step remembers what happened before!
 
-- [LevelDB](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/LevelDB) - Store data at warp speed with Google's engine that powers blockchains!
+- [LevelDB](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/LevelDB) - Store data at warp speed with Google's engine that powers blockchains!
 
-- [MCP Python SDK](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/MCP%20Python%20SDK) - Build powerful apps that communicate through an elegant protocol without sweating the details!
+- [MCP Python SDK](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/MCP%20Python%20SDK) - Build powerful apps that communicate through an elegant protocol without sweating the details!
 
-- [NumPy Core](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/NumPy%20Core) - Master the engine behind data science that makes Python as fast as C!
+- [NumPy Core](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/NumPy%20Core) - Master the engine behind data science that makes Python as fast as C!
 
-- [OpenManus](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/OpenManus) - Build AI agents with digital brains that think, learn, and use tools just like humans do!
+- [OpenManus](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/OpenManus) - Build AI agents with digital brains that think, learn, and use tools just like humans do!
 
-- [PocketFlow](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/PocketFlow) - 100-line LLM framework. Let Agents build Agents!
+- [Pydantic Core](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Pydantic%20Core) - Validate data at rocket speed with just Python type hints!
 
-- [Pydantic Core](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Pydantic%20Core) - Validate data at rocket speed with just Python type hints!
+- [Requests](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/Requests) - Talk to the internet in Python with code so simple it feels like cheating!
 
-- [Requests](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/Requests) - Talk to the internet in Python with code so simple it feels like cheating!
+- [SmolaAgents](https://the-pocket.github.io/Tutorial-Codebase-Knowledge/SmolaAgents) - Build tiny AI agents that punch way above their weight class!
 
-- [SmolaAgents](https://the-pocket.github.io/PocketFlow-Tutorial-Codebase-Knowledge/SmolaAgents) - Build tiny AI agents that punch way above their weight class!
-
-- Showcase Your AI-Generated Tutorials in [Discussions](https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge/discussions)!
+- Showcase Your AI-Generated Tutorials in [Discussions](https://github.com/The-Pocket/Tutorial-Codebase-Knowledge/discussions)!
 
 ## 🚀 Getting Started
 
 1. Clone this repository
-   ```bash
-   git clone https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge
-   ```
 
-3. Install dependencies:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Set up LLM in [`utils/call_llm.py`](./utils/call_llm.py) by providing credentials. By default, you can use the [AI Studio key](https://aistudio.google.com/app/apikey) with this client for Gemini Pro 2.5:
+3. Set up LLM in [`utils/call_llm.py`](./utils/call_llm.py) by providing credentials. By default, you can use the AI Studio key with this client for Gemini Pro 2.5:
 
    ```python
    client = genai.Client(
@@ -99,7 +108,7 @@ This is a tutorial project of [Pocket Flow](https://github.com/The-Pocket/Pocket
    python utils/call_llm.py
    ```
 
-5. Generate a complete codebase tutorial by running the main script:
+4. Generate a complete codebase tutorial by running the main script:
     ```bash
     # Analyze a GitHub repository
     python main.py --repo https://github.com/username/repo --include "*.py" "*.js" --exclude "tests/*" --max-size 50000
@@ -109,58 +118,38 @@ This is a tutorial project of [Pocket Flow](https://github.com/The-Pocket/Pocket
 
     # Or, generate a tutorial in Chinese
     python main.py --repo https://github.com/username/repo --language "Chinese"
+
+    # Or, generate a Software Architecture Document (SAD) instead of a tutorial
+    python main.py --repo https://github.com/username/repo --doc-type sad
+
+    # The SAD includes standard sections such as:
+    # - Chapter 0: Architecture Overview (using C4 Model)
+    #   * System Context diagrams showing the system and its external interactions
+    #   * Container diagrams showing the high-level technical building blocks
+    #   * Component diagrams showing the internal structure of containers
+    #   * Process and deployment views with sequence and deployment diagrams
+    # - Introduction
+    # - Architectural Representation
+    # - Architectural Goals and Constraints
+    # - Use-Case View
+    # - Logical View (System Context, Containers, Components)
+    # - Process View
+    # - Deployment View
+    # - Size and Performance
+    # - Quality
     ```
 
     - `--repo` or `--dir` - Specify either a GitHub repo URL or a local directory path (required, mutually exclusive)
     - `-n, --name` - Project name (optional, derived from URL/directory if omitted)
     - `-t, --token` - GitHub token (or set GITHUB_TOKEN environment variable)
     - `-o, --output` - Output directory (default: ./output)
-    - `-i, --include` - Files to include (e.g., "`*.py`" "`*.js`")
-    - `-e, --exclude` - Files to exclude (e.g., "`tests/*`" "`docs/*`")
+    - `-i, --include` - Files to include (e.g., "*.py" "*.js")
+    - `-e, --exclude` - Files to exclude (e.g., "tests/*" "docs/*")
     - `-s, --max-size` - Maximum file size in bytes (default: 100KB)
-    - `--language` - Language for the generated tutorial (default: "english")
-    - `--max-abstractions` - Maximum number of abstractions to identify (default: 10)
-    - `--no-cache` - Disable LLM response caching (default: caching enabled)
+    - `--language` - Language for the generated document (default: "english")
+    - `--doc-type` - Type of document to generate: tutorial or Software Architecture Document (SAD) (default: "tutorial")
 
-The application will crawl the repository, analyze the codebase structure, generate tutorial content in the specified language, and save the output in the specified directory (default: ./output).
-
-
-<details>
- 
-<summary> 🐳 <b>Running with Docker</b> </summary>
-
-To run this project in a Docker container, you'll need to pass your API keys as environment variables. 
-
-1. Build the Docker image
-   ```bash
-   docker build -t pocketflow-app .
-   ```
-
-2. Run the container
-
-   You'll need to provide your `GEMINI_API_KEY` for the LLM to function. If you're analyzing private GitHub repositories or want to avoid rate limits, also provide your `GITHUB_TOKEN`.
-   
-   Mount a local directory to `/app/output` inside the container to access the generated tutorials on your host machine.
-   
-   **Example for analyzing a public GitHub repository:**
-   
-   ```bash
-   docker run -it --rm \
-     -e GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE" \
-     -v "$(pwd)/output_tutorials":/app/output \
-     pocketflow-app --repo https://github.com/username/repo
-   ```
-   
-   **Example for analyzing a local directory:**
-   
-   ```bash
-   docker run -it --rm \
-     -e GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE" \
-     -v "/path/to/your/local_codebase":/app/code_to_analyze \
-     -v "$(pwd)/output_tutorials":/app/output \
-     pocketflow-app --dir /app/code_to_analyze
-   ```
-</details>
+The application will crawl the repository, analyze the codebase structure, generate content (either a tutorial or a Software Architecture Document) in the specified language, and save the output in the specified directory (default: ./output).
 
 ## 💡 Development Tutorial
 
@@ -173,10 +162,7 @@ To run this project in a Docker container, you'll need to pass your API keys as 
 <br>
 <div align="center">
   <a href="https://youtu.be/AFY67zOpbSo" target="_blank">
-    <img src="./assets/youtube_thumbnail.png" width="500" alt="Pocket Flow Codebase Tutorial" style="cursor: pointer;">
+    <img src="./assets/youtube_thumbnail.png" width="500" alt="IMAGE ALT TEXT" style="cursor: pointer;">
   </a>
 </div>
 <br>
-
-
-

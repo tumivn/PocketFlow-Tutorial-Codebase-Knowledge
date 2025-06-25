@@ -104,7 +104,7 @@ def crawl_github_files(
 
                     # Read content
                     try:
-                        with open(abs_path, "r", encoding="utf-8-sig") as f:
+                        with open(abs_path, "r", encoding="utf-8") as f:
                             content = f.read()
                         files[rel_path] = content
                         print(f"Added {rel_path} ({file_size} bytes)")
@@ -156,7 +156,7 @@ def crawl_github_files(
             return []
             
         if response.status_code != 200:
-            print(f"Error fetching the branches of {owner}/{repo}: {response.status_code} - {response.text}")
+            print(f"Error fetching the branches of {owner}/{path}: {response.status_code} - {response.text}")
             return []
 
         return response.json()

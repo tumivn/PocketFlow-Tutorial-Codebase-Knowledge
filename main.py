@@ -9,30 +9,14 @@ dotenv.load_dotenv()
 # Default file patterns
 DEFAULT_INCLUDE_PATTERNS = {
     "*.py", "*.js", "*.jsx", "*.ts", "*.tsx", "*.go", "*.java", "*.pyi", "*.pyx",
-    "*.c", "*.cc", "*.cpp", "*.h", "*.md", "*.rst", "*Dockerfile",
-    "*Makefile", "*.yaml", "*.yml",
+    "*.c", "*.cc", "*.cpp", "*.h", "*.md", "*.rst", "Dockerfile",
+    "Makefile", "*.yaml", "*.yml",
 }
 
 DEFAULT_EXCLUDE_PATTERNS = {
-    "assets/*", "data/*", "images/*", "public/*", "static/*", "temp/*",
-    "*docs/*",
-    "*venv/*",
-    "*.venv/*",
-    "*test*",
-    "*tests/*",
-    "*examples/*",
-    "v1/*",
-    "*dist/*",
-    "*build/*",
-    "*experimental/*",
-    "*deprecated/*",
-    "*misc/*",
-    "*legacy/*",
-    ".git/*", ".github/*", ".next/*", ".vscode/*",
-    "*obj/*",
-    "*bin/*",
-    "*node_modules/*",
-    "*.log"
+    "venv/*", ".venv/*", "*test*", "tests/*", "docs/*", "examples/*", "v1/*",
+    "dist/*", "build/*", "experimental/*", "deprecated/*",
+    "legacy/*", ".git/*", ".github/*", ".next/*", ".vscode/*", "obj/*", "bin/*", "node_modules/*", "*.log"
 }
 
 # --- Main Function ---
@@ -52,10 +36,9 @@ def main():
     parser.add_argument("-s", "--max-size", type=int, default=100000, help="Maximum file size in bytes (default: 100000, about 100KB).")
     # Add language parameter for multi-language support
     parser.add_argument("--language", default="english", help="Language for the generated tutorial (default: english)")
-    # Add use_cache parameter to control LLM caching
-    parser.add_argument("--no-cache", action="store_true", help="Disable LLM response caching (default: caching enabled)")
-    # Add max_abstraction_num parameter to control the number of abstractions
-    parser.add_argument("--max-abstractions", type=int, default=10, help="Maximum number of abstractions to identify (default: 10)")
+    # Add document type parameter for supporting different document types
+    parser.add_argument("--doc-type", default="tutorial", choices=["tutorial", "sad"], 
+                        help="Type of document to generate: tutorial or Software Architecture Document (SAD) (default: tutorial)")
 
     args = parser.parse_args()
 
@@ -81,12 +64,9 @@ def main():
 
         # Add language for multi-language support
         "language": args.language,
-        
-        # Add use_cache flag (inverse of no-cache flag)
-        "use_cache": not args.no_cache,
-        
-        # Add max_abstraction_num parameter
-        "max_abstraction_num": args.max_abstractions,
+
+        # Add document type for supporting different document types
+        "doc_type": args.doc_type,
 
         # Outputs will be populated by the nodes
         "files": [],
@@ -97,9 +77,9 @@ def main():
         "final_output_dir": None
     }
 
-    # Display starting message with repository/directory and language
-    print(f"Starting tutorial generation for: {args.repo or args.dir} in {args.language.capitalize()} language")
-    print(f"LLM caching: {'Disabled' if args.no_cache else 'Enabled'}")
+    # Display starting message with repository/directory, language, and document type
+    doc_type_display = "Software Architecture Document" if args.doc_type == "sad" else "tutorial"
+    print(f"Starting {doc_type_display} generation for: {args.repo or args.dir} in {args.language.capitalize()} language")
 
     # Create the flow instance
     tutorial_flow = create_tutorial_flow()

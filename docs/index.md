@@ -36,7 +36,6 @@ This is a tutorial project of [Pocket Flow](https://github.com/The-Pocket/Pocket
 - [MCP Python SDK](./MCP Python SDK/index.md) - Build powerful apps that communicate through an elegant protocol without sweating the details!
 - [NumPy Core](./NumPy Core/index.md) - Master the engine behind data science that makes Python as fast as C!
 - [OpenManus](./OpenManus/index.md) - Build AI agents with digital brains that think, learn, and use tools just like humans do!
-- [PocketFlow](./PocketFlow/index.md) - 100-line LLM framework. Let Agents build Agents!
 - [Pydantic Core](./Pydantic Core/index.md) - Validate data at rocket speed with just Python type hints!
 - [Requests](./Requests/index.md) - Talk to the internet in Python with code so simple it feels like cheating!
 - [SmolaAgents](./SmolaAgents/index.md) - Build tiny AI agents that punch way above their weight class!
